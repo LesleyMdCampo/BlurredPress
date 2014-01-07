@@ -1,5 +1,5 @@
 !!! 5
-%html
+%html.bg
   %head
     %meta{charset: "utf-8"}
 
@@ -30,21 +30,16 @@
                 %i.icon-edit
                 New post
           %li.divider
-          = user_content do
-            %li
+          %li
+            - if current_user
               = link_to log_out_path do
                 %i.icon-user
                 Log out
-          = non_user do
-            %li
+            - else
               = link_to log_in_path do
                 %i.icon-user
                 Log in
 
-    .row
-      .large-4.columns
-        %aside.panel= yield :sidebar
-
-      .large-8.columns= yield
+    .row= yield
 
     = javascript_include_tag "application"

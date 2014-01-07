@@ -8,7 +8,7 @@ BlurredPress::Application.routes.draw do
   get 'sessions/destroy' => 'sessions#destroy', as: :log_out
 
   # You can have the root of your site routed with "root"
-  root 'posts#index'
+  root 'static_files#landing'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
