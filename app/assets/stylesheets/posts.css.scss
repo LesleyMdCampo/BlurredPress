@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-$primary-color: #0A6B47;
+$primary-color: #6a0a2d;
 
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
@@ -14,19 +14,26 @@ $primary-color: #0A6B47;
 
 h1, h2, h3, h4, h5 {
   color: $primary-color;
+  font-family: Georgia, serif;
 }
 
 .post-preview {
   border-bottom: 3px solid $primary-color;
 }
 
+.panel {
+  font-size: 1.25em;
+  font-family: Georgia, serif;
+}
+
 a, a:visited {
   color: darken($primary-color, 10%);
+  font-family: Georgia, serif;
 }
 
 article {
   h1.title {
-    font-style: italic;
+    font-style: none;
   }
 
   time {
@@ -47,3 +54,4 @@ article {
     p { line-height: 1.5em; }
   }
 }
+

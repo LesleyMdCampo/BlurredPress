@@ -1,0 +1,23 @@
+!!! 5
+%html.bkg
+  %head
+    %meta{charset: "utf-8"}
+
+    %meta{name: "viewport", content: "width=device-width, initial-scale=1.0"}
+
+    %title Blurred Press
+
+    = stylesheet_link_tag "application", "//cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.1/css/font-awesome.min.css"
+    = javascript_include_tag "vendor/custom.modernizr"
+    = csrf_meta_tags
+
+  %body
+    =render 'layouts/navbar'
+
+    .row
+      .large-4.columns
+        %aside.panel= yield :sidebar
+
+      .large-8.columns= yield
+
+    = javascript_include_tag "application"
