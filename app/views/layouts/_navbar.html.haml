@@ -1,0 +1,28 @@
+%nav.top-bar
+  %ul.title-area
+    %li.name
+      %h1
+        %a{href:"#"} Blurred Press
+
+    %li.toggle-topbar.menu-icon
+      %a{href:"#"}
+        %span Menu
+
+  %section.top-bar-section
+    %ul.right
+      = user_content do
+        %li
+          = link_to new_post_path do
+            %i.icon-edit
+            New post
+      %li.divider
+      = user_content do
+        %li
+          = link_to log_out_path do
+            %i.icon-user
+            Log out
+      = non_user do
+        %li
+          = link_to log_in_path do
+            %i.icon-user
+            Log in
