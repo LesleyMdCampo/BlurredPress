@@ -40,6 +40,10 @@
                 %i.icon-user
                 Log in
 
-    .row= yield
+    .row
+      .large-4.columns
+        %aside.panel= yield :sidebar
+
+      .large-8.columns= yield
 
     = javascript_include_tag "application"

@@ -1,3 +1,8 @@
+- content_for :sidebar do
+  %h2 About Me
+
+  %p I'm a web developer living in Austin, Texas. Welcome to my blog about Latin and Nirvana lyrics!
+
 - @posts.each do |post|
   .post-preview
     %h2= link_to(post.title, post)
