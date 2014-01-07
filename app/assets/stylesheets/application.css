@@ -28,3 +28,10 @@
   margin-top: -50px;
   margin-left: -100px;
 }
+
+.center {
+  position: fixed;
+  bottom: 0px;
+  left: 50%;
+  margin-bottom: 10px;
+}

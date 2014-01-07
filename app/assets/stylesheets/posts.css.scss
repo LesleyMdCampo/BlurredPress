@@ -12,7 +12,7 @@ $primary-color: #6a0a2d;
           border-radius: $radius;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h3, h4, h5 {
   color: $primary-color;
   font-family: Georgia, serif;
 }
@@ -34,9 +34,10 @@ a, a:visited {
 article {
   h1.title {
     font-style: none;
+    font-family: Verdana, Geneva, sans-serif;
   }
 
-  time {
+time {
     padding: 4px;
     border: 2px solid darken($primary-color, 10%);
     @include border-radius(5px);
